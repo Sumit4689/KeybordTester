@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+
+body{
+    background-color: #EFEEEA;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-worksans {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.font-doto {
+  font-family: 'Doto', sans-serif; /* make sure 'Doto' is correct */
+}
+
+:root {
+  --primary: #FE7743;              /* Vibrant coral orange */
+  --secondary: #273F4F;            /* Deep navy blue */
+  --accent: #000000;               /* Black for emphasis */
+  --background: #EFEEEA;           /* Soft off-white background */
+  --card-background: #ffffff;      /* Slightly brighter for cards */
+  --text-primary: #000000;         /* Main text color */
+  --text-secondary: #4b5563;       /* Muted text color */
+}
+
+.dark {
+  --primary: #FE7743;              /* Same vibrant coral for consistency */
+  --secondary: #EFEEEA;            /* Light color used as contrast text */
+  --accent: #ffffff;               /* Accent white for highlights */
+  --background: #000000;           /* Dark base background */
+  --card-background: #273F4F;      /* Navy blue card background */
+  --text-primary: #EFEEEA;         /* Light text on dark background */
+  --text-secondary: #a0aec0;       /* Muted secondary text */
+}
