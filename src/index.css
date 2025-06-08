@@ -1,9 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-
-body{
-    background-color: #EFEEEA;
-}
 
 .font-inter {
   font-family: 'Inter', sans-serif;
@@ -35,4 +32,10 @@ body{
   --card-background: #273F4F;      /* Navy blue card background */
   --text-primary: #EFEEEA;         /* Light text on dark background */
   --text-secondary: #a0aec0;       /* Muted secondary text */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }

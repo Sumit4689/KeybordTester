@@ -1,12 +1,12 @@
 import './App.css'
-import NavBar from './components/NavBar.jsx'
+import Keyboard from './components/keyboard.jsx'
 
 function App() {
 
   return (
     <>
       <div>
-        <NavBar/>
+        <Keyboard/>
       </div>
     </>
   )
