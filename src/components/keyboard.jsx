@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
+import "./keyboard.css";
 
 function Keyboard() {
   return (
@@ -13,13 +14,22 @@ function Keyboard() {
 
       {/* Display section */}
       <section className="lg:px-42 md:px-32 py-4">
-        <div className="w-full h-24 bg-black rounded-lg shadow-lg flex items-center justify-center">
+        <div className="w-full h-24 bg-black shadow-sm rounded-lg flex items-center justify-center )">
         </div>
       </section>
 
       {/* Keyboard Section */}
       <section className="lg:px-42 md:px-32 py-4">
-        <div className="w-full h-142 bg-[var(--card-background)] rounded-lg shadow-(0 0 10px rgba(0,0,0,0.2), inset 0 0 3px rgba(0,0,0,0.3))"></div>
+        <div className="w-full h-142 bg-[var(--card-background)] rounded-lg shadow-(0 0 10px rgba(0,0,0,0.2), inset 0 0 3px rgba(0,0,0,0.3)) p-4 flex flex-col ">
+          <div className="w-full h-20 rounded-sm">
+            <div className="FunctionKeys"><div class="key">
+              <div class="keycap">
+                <span class="top">@</span>
+                <span class="bottom">2</span>
+              </div>
+            </div></div>
+          </div>
+        </div>
       </section>
     </main>
   );
