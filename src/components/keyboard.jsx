@@ -20,17 +20,17 @@ function Keyboard() {
 
       {/* Keyboard Section */}
       <section className="lg:px-16 md:px-8 py-4 flex justify-center">
-        <div className="keyboard-container bg-[var(--card-background)] rounded-lg shadow-lg p-6">
+        <div className="keyboardCasing rounded-lg shadow-lg p-6">
+          <div className="keyboard-container bg-[var(--card-background)] rounded-lg shadow-lg p-6">
 
-          <div className="main-keyboard">
             {/* Function Keys Row */}
-            <div className="keyboard-row function-row">
+            <div className="keyboard-row">
               <div className="key"><div className="keycap"><span className="bottom">Esc</span></div></div>
               <div className="key-gap"></div>
-              <div className="key"><div className="keycap"><span className="bottom">F1</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">F2</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">F3</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">F4</span></div></div>
+              <div className="key function-row"><div className="keycap"><span className="bottom">F1</span></div></div>
+              <div className="key function-row"><div className="keycap"><span className="bottom">F2</span></div></div>
+              <div className="key function-row"><div className="keycap"><span className="bottom">F3</span></div></div>
+              <div className="key function-row"><div className="keycap"><span className="bottom">F4</span></div></div>
               <div className="key-gap"></div>
               <div className="key"><div className="keycap"><span className="bottom">F5</span></div></div>
               <div className="key"><div className="keycap"><span className="bottom">F6</span></div></div>
@@ -44,17 +44,11 @@ function Keyboard() {
               <div className="key-gap"></div>
               <div className="key"><div className="keycap"><span className="bottom">Del</span></div></div>
               <div className="key-gap"></div>
+              <div className="key-gap"></div>
               <div className="key"><div className="keycap"><span className="bottom">Ins</span></div></div>
               <div className="key"><div className="keycap"><span className="bottom">PgUp</span></div></div>
               <div className="key"><div className="keycap"><span className="bottom">PgDn</span></div></div>
-              <div className="key-gap"></div>
-              <div className="roundkey-container">
-                <div className="roundkey">
-                  <div className="roundkeycap">
-                    <span>⚙</span>
-                  </div>
-                </div>
-              </div>
+              <div className="roundkey"><div className="roundkeycap"><span>⚙</span></div></div>
             </div>
 
             {/* Number Row */}
@@ -72,7 +66,13 @@ function Keyboard() {
               <div className="key"><div className="keycap"><span className="top">)</span><span className="bottom">0</span></div></div>
               <div className="key"><div className="keycap"><span className="top">_</span><span className="bottom">-</span></div></div>
               <div className="key"><div className="keycap"><span className="top">+</span><span className="bottom">=</span></div></div>
-              <div className="key key-wide"><div className="keycap"><span className="bottom">Backspace</span></div></div>
+              <div className="key key-backspace"><div className="keycap"><span className="bottom">Backspace</span></div></div>
+              <div className="key-gap"></div>
+              <div className="key-gap"></div>
+              <div className="key"><div className="keycap"><span className="bottom">Num</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">/</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">*</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">-</span></div></div>
             </div>
 
             {/* QWERTY Row */}
@@ -91,6 +91,11 @@ function Keyboard() {
               <div className="key"><div className="keycap"><span className="top">{'{'}</span><span className="bottom">[</span></div></div>
               <div className="key"><div className="keycap"><span className="top">{'}'}</span><span className="bottom">]</span></div></div>
               <div className="key key-wide"><div className="keycap"><span className="top">|</span><span className="bottom">\</span></div></div>
+              <div className="key-gap"></div>
+              <div className="key-gap"></div>
+              <div className="key"><div className="keycap"><span className="bottom">7</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">8</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">9</span></div></div>
             </div>
 
             {/* ASDF Row */}
@@ -108,6 +113,13 @@ function Keyboard() {
               <div className="key"><div className="keycap"><span className="top">:</span><span className="bottom">;</span></div></div>
               <div className="key"><div className="keycap"><span className="top">"</span><span className="bottom">'</span></div></div>
               <div className="key key-enter"><div className="keycap"><span className="bottom">Enter</span></div></div>
+              <div className="key-gap"></div>
+              <div className="key-gap"></div>
+              <div className="key"><div className="keycap"><span className="bottom">4</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">5</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">6</span></div></div>
+              {/* <div className="key"><div className="keycap"><span className="bottom">+</span></div></div> */}
+
             </div>
 
             {/* ZXCV Row */}
@@ -124,81 +136,47 @@ function Keyboard() {
               <div className="key"><div className="keycap"><span className="top">&gt;</span><span className="bottom">.</span></div></div>
               <div className="key"><div className="keycap"><span className="top">?</span><span className="bottom">/</span></div></div>
               <div className="key key-shift"><div className="keycap"><span className="bottom">Shift</span></div></div>
+              <div className="key-gap"></div>
+              <div className="key key-upArrow"><div className="keycap"><span className="bottom">↑</span></div></div>
+              <div className="key-gap"></div>
+              <div className="key"><div className="keycap"><span className="bottom">1</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">2</span></div></div>
+              <div className="key"><div className="keycap"><span className="bottom">3</span></div></div>
+
             </div>
 
             {/* Bottom Row */}
             <div className="keyboard-row bottom-row">
               <div className="key key-ctrl"><div className="keycap"><span className="bottom">Ctrl</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">Fn</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">⊞</span></div></div>
+              <div className="key key-ctrl"><div className="keycap"><span className="bottom">⊞</span></div></div>
               <div className="key key-alt"><div className="keycap"><span className="bottom">Alt</span></div></div>
               <div className="key key-space"><div className="keycap"></div></div>
               <div className="key key-alt"><div className="keycap"><span className="bottom">Alt</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">Menu</span></div></div>
+              <div className="key key-ctrl"><div className="keycap"><span className="bottom">Fn</span></div></div>
               <div className="key key-ctrl"><div className="keycap"><span className="bottom">Ctrl</span></div></div>
-            </div>
-
-          </div>
-
-          {/* Navigation Cluster */}
-          <div className="nav-cluster">
-
-            {/* Arrow Keys */}
-            <div className="arrow-cluster">
-              <div className="arrow-row-top">
-                <div className="key arrow-key"><div className="keycap"><span className="bottom">↑</span></div></div>
-              </div>
-              <div className="arrow-row-bottom">
-                <div className="key arrow-key"><div className="keycap"><span className="bottom">←</span></div></div>
-                <div className="key arrow-key"><div className="keycap"><span className="bottom">↓</span></div></div>
-                <div className="key arrow-key"><div className="keycap"><span className="bottom">→</span></div></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Number Pad Section */}
-          <div className="numpad-section">
-            {/* Numpad Function Row */}
-            <div className="keyboard-row numpad-function-row">
-              <div className="key"><div className="keycap"><span className="bottom">Num</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">/</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">*</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">-</span></div></div>
-            </div>
-
-            {/* Numpad First Row */}
-            <div className="keyboard-row numpad-row">
-              <div className="key"><div className="keycap"><span className="bottom">7</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">8</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">9</span></div></div>
-              <div className="key key-numpad-tall"><div className="keycap"><span className="bottom">+</span></div></div>
-            </div>
-
-            {/* Numpad Second Row */}
-            <div className="keyboard-row numpad-row">
-              <div className="key"><div className="keycap"><span className="bottom">4</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">5</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">6</span></div></div>
-            </div>
-
-            {/* Numpad Third Row */}
-            <div className="keyboard-row numpad-row">
-              <div className="key"><div className="keycap"><span className="bottom">1</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">2</span></div></div>
-              <div className="key"><div className="keycap"><span className="bottom">3</span></div></div>
-              <div className="key key-numpad-tall"><div className="keycap"><span className="bottom">Enter</span></div></div>
-            </div>
-
-            {/* Numpad Bottom Row */}
-            <div className="keyboard-row numpad-bottom-row">
-              <div className="key key-numpad-wide"><div className="keycap"><span className="bottom">0</span></div></div>
+              <div className="key-gap"></div>
+              <div className="key key-downArrow"><div className="keycap"><span className="bottom">←</span></div></div>
+              <div className="key key-downArrow"><div className="keycap"><span className="bottom">↓</span></div></div>
+              <div className="key key-downArrow"><div className="keycap"><span className="bottom">→</span></div></div>
+              <div className="key-gap"></div>
+              <div className="key"><div className="keycap"><span className="bottom">0</span></div></div>
               <div className="key"><div className="keycap"><span className="bottom">.</span></div></div>
             </div>
+
+            {/* Tall Numpad Enter Key */}
+            <div className="numpad-enter-container">
+              <div className="key numpad-enter-tall">
+                <div className="keycap"><span className="bottom keycap-enter">↵</span></div>
+              </div>
+            </div>
+
+            <div className="numpad-plus-container">
+              <div className="key numpad-plus-tall">
+                <div className="keycap"><span className="bottom">+</span></div>
+              </div>
+            </div>
+
           </div>
-
-          {/* Round Knob */}
-
-
         </div>
       </section>
     </main>
