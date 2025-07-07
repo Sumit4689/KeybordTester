@@ -1,0 +1,428 @@
+*{
+    box-sizing: border-box;
+}
+
+.keyboardCasing {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: var(--secondary);
+}
+
+/* Keyboard Container */
+.keyboard-container {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 73px 349px;
+    grid-template-columns: 950px 260px;
+    position: relative;
+    background-color: var(--secondary);
+    padding: 0px;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 8px;
+}
+
+.function-key {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 68px repeat(3, 260px) 68px;
+    column-gap: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+.numpad-Top-row {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.keyboard-row {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 69.8px);
+}
+
+.numpad-row{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 69.8px repeat(2, 139.6px);
+}
+
+.Number-row {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(13, 60px) 110px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.numpad-rows{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    justify-content: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.numpad-second{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(2, 69.8px);
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    justify-content: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.numpad-third{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(2, 69.8px);
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    justify-content: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.numpad-row-bottom{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 64px 196px;
+    align-items: center;
+}
+
+.numpad-row-bottom-left{
+    /* width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    padding-left: 2px;
+    padding-right: 4px;
+    translate: -8px 8px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; */
+    translate: -8px 8px;
+}
+
+.numpad-row-bottom-right{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    gap: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    align-items: center;
+    justify-items: center;
+}
+
+.qwerty-first {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 85px repeat(12, 60px) 85px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.qwerty-second {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100px repeat(11, 60px) 134px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.qwerty-third {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 882px 68px;
+    align-items: center;
+}
+
+.qwerty-third-left {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 130px repeat(10, 60px) 100px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.qwerty-third-right {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    translate: 8px 8px;
+}
+
+.qwerty-bottom {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 820px 130px;
+    align-items: center;
+}
+
+.qwerty-bottom-left {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 80px) 368px repeat(3, 60px);
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.qwerty-bottom-right {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    translate: 8px 8px;
+}
+
+/* .Qwerty-Arrow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    background-color: black;
+} */
+
+.key-cluster {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+
+/* Single Standard Key CSS */
+.key {
+    width: 60px;
+    height: 65px;
+    border-width: 3px 7px 10px;
+    border-style: solid;
+    border-radius: 4px;
+    background: #d3cfcc;
+    border-color: #ece8e4 #dedad6 #c9c4c4;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+/* Key Size Variations */
+.key-wide {
+    width: 85px;
+}
+
+.singlekey {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singlekey2 {
+    width: 68px;
+    height: 68px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.key-backspace {
+    width: 110px;
+}
+
+.key-caps {
+    width: 100px;
+}
+
+.key-enter {
+    width: 134px;
+}
+
+.key-shift-Left {
+    width: 130px;
+}
+
+.key-shift-Right {
+    width: 100px;
+}
+
+.key-ctrl {
+    width: 80px;
+}
+
+.key-alt {
+    width: 80px;
+}
+
+
+.key-space {
+    width: 368px;
+}
+
+
+.roundkey {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border-width: 0px 6px 10px;
+    border-style: solid;
+    border-radius: 50%;
+    background: #d3cfcc;
+    border-color: #ece8e4 #dedad6 #c9c4c4;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.roundkeybase{
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+
+.roundkeycap {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 50%;
+    background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    align-items: center;
+    font-weight: 700;
+}
+
+.roundkey:hover .roundkeycap {
+    transform: rotate(360deg);
+    transition: transform 0.8s ease-in-out;
+}
+
+.key:hover {
+    transform: scale(0.95, 0.95);
+}
+
+.keycap {
+    width: 100%;
+    height: 100%;
+    padding: 5px 0 0 7px;
+    font-size: 16px;
+    line-height: 1;
+    background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary);
+}
+
+.keycap-enter {
+    font-size: 20px;
+}
+
+/* Optional: Text on top of key (like shift symbols) */
+.key .top {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+    line-height: 1;
+    display: block;
+    padding: 3px 5px 0 0;
+}
+
+/* Optional: Bottom text (main character) */
+.key .bottom {
+    width: inherit;
+    line-height: 20px;
+}
+
+.key-upArrow {
+    translate: 8px 8px;
+}
+
+.numpad-plus{
+    height: 135.6px; /* Same height as the row container to span 2 rows */
+    grid-row: 1 / 3;
+    grid-column: 4;
+}

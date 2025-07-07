@@ -1,12 +1,12 @@
 import './App.css'
-import Keyboard from './components/keyboard.jsx'
+import Keyboard2 from './components/Keyboard2.jsx'
 
 function App() {
 
   return (
     <>
       <div>
-        <Keyboard/>
+        <Keyboard2/>
       </div>
     </>
   )
