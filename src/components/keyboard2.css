@@ -9,7 +9,6 @@
     background-color: var(--secondary);
 }
 
-/* Keyboard Container */
 .keyboard-container {
     width: fit-content;
     height: fit-content;
@@ -45,7 +44,6 @@
     width: 100%;
     height: 100%;
     background-color: black;
-    border-radius: 4px;
 }
 
 .keyboard-row {
@@ -72,8 +70,6 @@
     align-items: center;
     padding-left: 4px;
     padding-right: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 
 .numpad-rows{
@@ -87,8 +83,6 @@
     padding-left: 4px;
     padding-right: 4px;
     justify-content: center;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 
 .numpad-second{
@@ -103,23 +97,16 @@
     padding-left: 4px;
     padding-right: 4px;
     justify-content: center;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
 }
 
 .numpad-third{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 60px);
+    grid-template-columns: 66px repeat(2, 64px) 66px;
     grid-template-rows: repeat(2, 69.8px);
-    column-gap: 4px;
     align-items: center;
-    padding-left: 4px;
-    padding-right: 4px;
-    justify-content: center;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    justify-items: center;
 }
 
 .numpad-row-bottom{
@@ -131,16 +118,6 @@
 }
 
 .numpad-row-bottom-left{
-    /* width: 100%;
-    height: 100%;
-    background-color: black;
-    display: grid;
-    align-items: center;
-    padding-left: 2px;
-    padding-right: 4px;
-    translate: -8px 8px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px; */
     translate: -8px 8px;
 }
 
@@ -245,15 +222,6 @@
     translate: 8px 8px;
 }
 
-/* .Qwerty-Arrow{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    background-color: black;
-} */
-
 .key-cluster {
     width: 100%;
     height: 100%;
@@ -263,8 +231,6 @@
     background-color: black;
 }
 
-
-/* Single Standard Key CSS */
 .key {
     width: 60px;
     height: 65px;
@@ -293,13 +259,22 @@
 }
 
 .singlekey2 {
-    width: 68px;
-    height: 68px;
+    width: 100%;
+    height: 100%;
     background-color: black;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    margin-right: 4px;
+}
+
+.singlekey3 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
 }
 
 .key-backspace {
@@ -401,7 +376,6 @@
     font-size: 20px;
 }
 
-/* Optional: Text on top of key (like shift symbols) */
 .key .top {
     font-size: 12px;
     font-style: italic;
@@ -411,7 +385,6 @@
     padding: 3px 5px 0 0;
 }
 
-/* Optional: Bottom text (main character) */
 .key .bottom {
     width: inherit;
     line-height: 20px;
@@ -421,8 +394,13 @@
     translate: 8px 8px;
 }
 
+.key-rightArrow {
+    translate: -10px 8px;
+}
+
 .numpad-plus{
-    height: 135.6px; /* Same height as the row container to span 2 rows */
+    height: 135.6px;
     grid-row: 1 / 3;
     grid-column: 4;
 }
+

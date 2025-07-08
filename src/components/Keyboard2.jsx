@@ -132,7 +132,7 @@ function Keyboard2() {
                                     <div className="key"><div className="keycap"><span className="bottom">Alt</span></div></div>
                                     <div className="key"><div className="keycap"><span className="bottom">Fn</span></div></div>
                                     <div className="key"><div className="keycap"><span className="bottom">Ctrl</span></div></div>
-                                </div>
+                                </div> 
                                 <div className="qwerty-bottom-right">
                                     <div className="key key-downArrow"><div className="keycap"><span className="bottom">←</span></div></div>
                                     <div className="key key-downArrow"><div className="keycap"><span className="bottom">↓</span></div></div>
@@ -155,14 +155,29 @@ function Keyboard2() {
                                 <div className="key"><div className="keycap"><span className="bottom">5</span></div></div>
                                 <div className="key"><div className="keycap"><span className="bottom">6</span></div></div>
                             </div>
-                            <div className="numpad-second">
+                            <div className="numpad-third">
+                                <div className="singlekey2">
                                 <div className="key"><div className="keycap"><span className="bottom">1</span></div></div>
-                                <div className="key"><div className="keycap"><span className="bottom">2</span></div></div>
-                                <div className="key"><div className="keycap"><span className="bottom">3</span></div></div>
-                                <div className="key numpad-plus"><div className="keycap"><span className="bottom">↵</span></div></div>
-                                <div className="key key-downArrow"><div className="keycap"><span className="bottom">→</span></div></div>
-                                <div className="key"><div className="keycap"><span className="bottom">0</span></div></div>
-                                <div className="key"><div className="keycap"><span className="bottom">.</span></div></div>
+                                </div>
+                                <div className="singlekey2">
+                                    <div className="key"><div className="keycap"><span className="bottom">2</span></div></div>
+                                </div>
+                                <div className="singlekey2">
+                                    <div className="key"><div className="keycap"><span className="bottom">3</span></div></div>
+                                </div>
+                                <div className="singlekey3">
+                                    <div className="key numpad-plus"><div className="keycap"><span className="bottom">↵</span></div></div>
+                                </div>
+                                <div className="singlekey2 key-rightArrow">
+                                    <div className="key key-downArrow"><div className="keycap"><span className="bottom">→</span></div></div>
+                                </div>
+                                <div className="singlekey2 ">
+                                    <div className="key"><div className="keycap"><span className="bottom">0</span></div></div>
+                                </div>
+                                <div className="singlekey2">
+                                    <div className="key"><div className="keycap"><span className="bottom">.</span></div></div>
+                                </div>
+                                <div className="singlekey2"></div>
                             </div>
                         </div>
                     </div>
