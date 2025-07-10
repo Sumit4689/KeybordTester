@@ -72,7 +72,7 @@ function Keyboard2() {
                             <div className="key"><div className="keycap"><span className="bottom">PgUp</span></div></div>
                             <div className="key"><div className="keycap"><span className="bottom">PgDn</span></div></div>
                             <div className="roundkeybase">
-                                <div className="roundkey"><div className="roundkeycap"><span>⚙</span></div></div>
+                                <div className="roundkey round-knob"><div className="roundkeycap round-knob"><span>⚙</span></div></div>
                             </div>
                         </div>
                         <div className="keyboard-row">
