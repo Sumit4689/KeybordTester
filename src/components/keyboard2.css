@@ -354,6 +354,10 @@
     transform: scale(0.95, 0.95);
 }
 
+.pressed {
+    transform: scale(0.95, 0.95);
+}
+
 .keycap {
     width: 100%;
     height: 100%;
@@ -404,3 +408,40 @@
     grid-column: 4;
 }
 
+/* Keyboard color scheme */
+
+.standard-key {
+    background: #d3cfcc;
+    border-color: #ece8e4 #dedad6 #c9c4c4;
+    color: #000000;
+}
+
+.modifier-key {
+    background: #4a7a7a;
+    border-color: #5c8c8c #386868 #265656;
+    color: #000000;
+}
+
+.functions-key {
+    background: #cc7a4a;
+    border-color: #de8c5c #ba6838 #a85626;
+    color: #ffffff;
+}
+
+.wasd-key {
+    background: #fe6b2f;
+    border-color: #ff7e4a #fe5a1f #e54d1a;
+    color: #ffffff;
+}
+
+.escape-key {
+    background: #2a2a2a;
+    border-color: #3d3d3d #1f1f1f #0d0d0d;
+    color: #ffffff;
+}
+
+.arrow-key {
+    background: #b8956f;
+    border-color: #caa781 #a6835d #94714b;
+    color: #ffffff;
+}
