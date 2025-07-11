@@ -8,8 +8,8 @@ function NavBar() {
                 <div>
                     <ul className="flex justify-between items-center gap-8 font-inter text-[var(--text-secondary)] text-lg font-bold ">
                         <li className="transition duration-300 hover:text-[var(--primary)] cursor-pointer">Typing Speed</li>
-                        <li className="transition duration-300 hover:text-[var(--primary)] cursor-pointer">random</li>
-                        <li className="transition duration-300 hover:text-[var(--primary)] cursor-pointer">about</li>
+                        <li className="transition duration-300 hover:text-[var(--primary)] cursor-pointer">Random</li>
+                        <li className="transition duration-300 hover:text-[var(--primary)] cursor-pointer">About</li>
                     </ul>
                 </div>
             </header>

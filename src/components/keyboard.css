@@ -1,207 +1,464 @@
-.keyboardCasing{
-  width: fit-content;
-  height: fit-content;
-  padding: 20px;
-  background-color: var(--secondary);
+*{
+    box-sizing: border-box;
 }
 
-/* Keyboard Container */
+.keyboardCasing {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: var(--secondary);
+}
+
 .keyboard-container {
-  display: grid;
-  grid-template-rows: repeat(5, auto);
-  gap: 4px;
-  padding: 12px;
-  position: relative;
-  background-color: black;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 73px 349px;
+    grid-template-columns: 950px 260px;
+    position: relative;
+    background-color: var(--secondary);
+    padding: 0px;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 8px;
 }
 
-/* Keyboard Rows */
+.function-key {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 68px repeat(3, 260px) 68px;
+    column-gap: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+.numpad-Top-row {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
 .keyboard-row {
-  display: flex;
-  gap: 4px;
-  justify-content: flex-start;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 69.8px);
 }
 
-.function-row {
-  margin-bottom: 16px;
+.numpad-row{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 69.8px repeat(2, 139.6px);
 }
 
-.number-row, .qwerty-row, .asdf-row, .zxcv-row {
-  margin-bottom: 8px;
+.Number-row {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(13, 60px) 110px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-.bottom-row {
-  margin-bottom: 0;
+.numpad-rows{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    justify-content: center;
 }
 
-/* Key Gaps for Function Row */
-.key-gap {
-  width: 16px;
+.numpad-second{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(2, 69.8px);
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    justify-content: center;
 }
 
-/* Single Standard Key CSS */
+.numpad-third{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 66px repeat(2, 64px) 66px;
+    grid-template-rows: repeat(2, 69.8px);
+    align-items: center;
+    justify-items: center;
+}
+
+.numpad-row-bottom{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 64px 196px;
+    align-items: center;
+}
+
+.numpad-row-bottom-left{
+    translate: -8px 8px;
+}
+
+.numpad-row-bottom-right{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    gap: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    align-items: center;
+    justify-items: center;
+}
+
+.qwerty-first {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 85px repeat(12, 60px) 85px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.qwerty-second {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100px repeat(11, 60px) 134px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.qwerty-third {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 882px 68px;
+    align-items: center;
+}
+
+.qwerty-third-left {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 130px repeat(10, 60px) 100px;
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.qwerty-third-right {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    translate: 8px 8px;
+}
+
+.qwerty-bottom {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 820px 130px;
+    align-items: center;
+}
+
+.qwerty-bottom-left {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 80px) 368px repeat(3, 60px);
+    column-gap: 4px;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.qwerty-bottom-right {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    translate: 8px 8px;
+}
+
+.key-cluster {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
 .key {
-  width: 60px;
-  height: 65px;
-  margin: 2px;
-  border-width: 3px 7px 10px;
-  border-style: solid;
-  border-radius: 4px;
-  background: #d3cfcc;
-  border-color: #ece8e4 #dedad6 #c9c4c4;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.1s ease;
+    width: 60px;
+    height: 65px;
+    border-width: 3px 7px 10px;
+    border-style: solid;
+    border-radius: 4px;
+    background: #d3cfcc;
+    border-color: #ece8e4 #dedad6 #c9c4c4;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s ease;
 }
 
 /* Key Size Variations */
 .key-wide {
-  width: 100px;
+    width: 85px;
+}
+
+.singlekey {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singlekey2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.singlekey3 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
 }
 
 .key-backspace {
-  width: 140px;
+    width: 110px;
 }
 
 .key-caps {
-  width: 100px;
+    width: 100px;
 }
 
 .key-enter {
-  width: 170px;
+    width: 134px;
 }
 
-.key-shift {
-  width: 135px;
+.key-shift-Left {
+    width: 130px;
+}
+
+.key-shift-Right {
+    width: 100px;
 }
 
 .key-ctrl {
-  width: 80px;
+    width: 80px;
 }
 
 .key-alt {
-  width: 80px;
+    width: 80px;
 }
+
 
 .key-space {
-  width: 363px;
-}
-
-.key-upArrow {
-  translate: 0 12px;
-}
-
-.key-downArrow {
-  translate: 0 8px;
+    width: 368px;
 }
 
 
-/* Round Knob Container */
-.roundkey-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.roundkey {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border-width: 0px 6px 10px;
+    border-style: solid;
+    border-radius: 50%;
+    background: #b8956f;
+    border-color: #caa781 #a6835d #94714b;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-.roundkey{
-  width: 70px;
-  height: 70px;
-  margin: 2px;
-  border-width: 0px 6px 10px;
-  border-style: solid;
-  border-radius: 50%;
-  background: #d3cfcc;
-  border-color: #ece8e4 #dedad6 #c9c4c4;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+.roundkeybase{
+    background-color: var(--secondary);
+    border-radius: 4px;
 }
 
-.roundkeycap{
-  width: 100%;
-  height: 100%;
-  font-size: 18px;
-  line-height: 1;
-  border-radius: 50%;
-  background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-  align-items: center;
-  font-weight: 700;
+.roundkeycap {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 50%;
+    background: linear-gradient(135deg, 
+        #d4b896 0%, 
+        #b8956f 25%, 
+        #a6835d 50%, 
+        #94714b 75%, 
+        #82633f 100%
+    );
+    box-shadow: 
+        0 0 15px rgba(180, 149, 111, 0.3),
+        inset 0 3px 6px rgba(255, 255, 255, 0.2),
+        inset 0 -3px 6px rgba(130, 99, 63, 0.4),
+        inset 2px 0 4px rgba(255, 255, 255, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    align-items: center;
+    font-weight: 700;
 }
+ 
 
-.roundkey:hover .roundkeycap{
-  transform: rotate(360deg);
-  transition: transform 0.8s ease-in-out;
+.roundkey:hover .roundkeycap {
+    transform: rotate(360deg);
+    transition: transform 0.8s ease-in-out;
 }
 
 .key:hover {
-  transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+}
+
+.pressed {
+    transform: scale(0.95, 0.95);
 }
 
 .keycap {
-  width: 100%;
-  height: 100%;
-  padding: 5px 0 0 7px;
-  font-size: 16px;
-  line-height: 1;
-  background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-  border-radius: 4px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--primary);
+    width: 100%;
+    height: 100%;
+    padding: 5px 0 0 7px;
+    font-size: 16px;
+    line-height: 1;
+    background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary);
 }
 
-.keycap-enter{
-  font-size: 20px;
+.keycap-enter {
+    font-size: 20px;
 }
 
-/* Optional: Text on top of key (like shift symbols) */
 .key .top {
-  font-size: 12px;
-  font-style: italic;
-  text-align: right;
-  line-height: 1;
-  display: block;
-  padding: 3px 5px 0 0;
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+    line-height: 1;
+    display: block;
+    padding: 3px 5px 0 0;
 }
 
-/* Optional: Bottom text (main character) */
 .key .bottom {
-  width: inherit;
-  line-height: 20px;
+    width: inherit;
+    line-height: 20px;
 }
 
-/* Tall Numpad Enter Key */
-.numpad-enter-container {
-  position: absolute;
-  top: calc(59px + 65px + 8px + 64px + 8px + 65px + 8px + 65px + 8px); /* Position at ZXCV row level */
-  right: 20px; /* Align with numpad keys */
-  z-index: 10;
+.key-upArrow {
+    translate: 8px 8px;
 }
 
-.numpad-enter-tall {
-  height: 146px; /* Spans 2 rows: 65px + 8px gap + 65px */
-  width: 60px;
+.key-rightArrow {
+    translate: -10px 8px;
 }
 
-/* Tall Numpad plus Key */
-.numpad-plus-container {
-  position: absolute;
-  top: calc(59px + 65px + 64px); /* Position at ZXCV row level */
-  right: 20px; /* Align with numpad keys */
-  z-index: 10;
+.numpad-plus{
+    height: 135.6px;
+    grid-row: 1 / 3;
+    grid-column: 4;
 }
 
-.numpad-plus-tall {
-  height: 146px; /* Spans 2 rows: 65px + 8px gap + 65px */
-  width: 60px;
+/* Keyboard color scheme */
+
+.standard-key {
+    background: #d3cfcc;
+    border-color: #ece8e4 #dedad6 #c9c4c4;
+    color: #000000;
 }
+
+.modifier-key {
+    background: #4a7a7a;
+    border-color: #5c8c8c #386868 #265656;
+    color: #000000;
+}
+
+.functions-key {
+    background: #cc7a4a;
+    border-color: #de8c5c #ba6838 #a85626;
+    color: #ffffff;
+}
+
+.wasd-key {
+    background: #fe6b2f;
+    border-color: #ff7e4a #fe5a1f #e54d1a;
+    color: #ffffff;
+}
+
+.escape-key {
+    background: #2a2a2a;
+    border-color: #3d3d3d #1f1f1f #0d0d0d;
+    color: #ffffff;
+}
+
+.arrow-key {
+    background: #b8956f;
+    border-color: #caa781 #a6835d #94714b;
+    color: #ffffff;
+}
+
+/* .round-knob{
+    background: #3a3a3a;
+    border-color: #4d4d4d #2a2a2a #1a1a1a;
+    background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
+} */
