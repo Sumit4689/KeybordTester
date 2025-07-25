@@ -1,26 +1,7 @@
 import "./keyboard.css";
-import { use, useEffect } from "react";
 
 function Keyboard() {
-    useEffect(() => {
-        window.addEventListener('keydown', (event) => {
-            event.preventDefault(); // Prevent default action for keydown
-            const key = event.code;
-            const downkey = key.toLowerCase(); // Convert to lowercase for consistency
-            document.getElementById(downkey)?.classList.add('pressed'); // Add active class to the pressed key
-            console.log(`Key pressed: ${downkey}`);
-        })
-        window.addEventListener('keyup', (event) => {
-            event.preventDefault(); // Prevent default action for keyup
-            const key = event.code;
-            const upkey = key.toLowerCase(); // Convert to lowercase for consistency
-            document.getElementById(upkey)?.classList.remove('pressed'); // remove active class to the pressed key
-            console.log(`Key released: ${upkey}`);
-        })
-
-
-    })
-
+    
     return (
         <div className="keyboardCasing rounded-lg shadow-lg p-6">
             <div className="keyboard-container bg-[var(--card-background)] rounded-lg p-6">
