@@ -1,0 +1,97 @@
+/* HeatMap.css */
+
+.heatmap-container {
+  margin-top: 1rem;
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heatmap-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.heatmap-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.keyboard-heatmap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.heatmap-key {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.heatmap-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.color-low {
+  background-color: rgba(255, 152, 0, 0.3);
+}
+
+.color-medium {
+  background-color: rgba(255, 87, 34, 0.5);
+}
+
+.color-high {
+  background-color: rgba(244, 67, 54, 0.7);
+}
+
+/* Heat levels */
+.heat-level-0 {
+  background-color: transparent;
+}
+
+.heat-level-1 {
+  background-color: rgba(255, 152, 0, 0.3);
+}
+
+.heat-level-2 {
+  background-color: rgba(255, 87, 34, 0.5);
+}
+
+.heat-level-3 {
+  background-color: rgba(244, 67, 54, 0.7);
+}
+
+.heat-level-4 {
+  background-color: rgba(244, 67, 54, 0.85);
+}
+
+.heat-level-5 {
+  background-color: rgba(198, 40, 40, 1);
+}

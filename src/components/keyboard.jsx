@@ -33,8 +33,8 @@ function Keyboard() {
                 </div>
                 <div className="numpad-Top-row">
                     <div className="key" id="insert"><div className="keycap"><span className="bottom">Ins</span></div></div>
-                    <div className="key" id="pageup"><div className="keycap"><span className="bottom">PgUp</span></div></div>
-                    <div className="key" id="pagedown"><div className="keycap"><span className="bottom">PgDn</span></div></div>
+                    <div className="key" id="pageup"><div className="keycap"><span className="bottom PgBtn">PgUp</span></div></div>
+                    <div className="key" id="pagedown"><div className="keycap"><span className="bottom PgBtn">PgDn</span></div></div>
                     <div className="roundkeybase">
                         <div className="roundkey round-knob"><div className="roundkeycap round-knob"><span>⚙</span></div></div>
                     </div>

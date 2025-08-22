@@ -244,6 +244,27 @@
     transition: all 0.1s ease;
 }
 
+/* Mistake level indicators - real-time error tracking */
+.mistake-level-1 {
+    border-color: rgba(255, 152, 0, 0.3) rgba(255, 152, 0, 0.4) rgba(255, 152, 0, 0.5);
+}
+
+.mistake-level-2 {
+    border-color: rgba(255, 152, 0, 0.5) rgba(255, 152, 0, 0.6) rgba(255, 152, 0, 0.7);
+}
+
+.mistake-level-3 {
+    border-color: rgba(255, 87, 34, 0.5) rgba(255, 87, 34, 0.6) rgba(255, 87, 34, 0.7);
+}
+
+.mistake-level-4 {
+    border-color: rgba(244, 67, 54, 0.6) rgba(244, 67, 54, 0.7) rgba(244, 67, 54, 0.8);
+}
+
+.mistake-level-5 {
+    border-color: rgba(198, 40, 40, 0.7) rgba(198, 40, 40, 0.8) rgba(198, 40, 40, 0.9);
+}
+
 /* Key Size Variations */
 .key-wide {
     width: 85px;
@@ -462,3 +483,7 @@
     border-color: #4d4d4d #2a2a2a #1a1a1a;
     background: linear-gradient(to right, #e5e2e1, #f5f3f1, #e5e2e1);
 } */
+
+.PgBtn{
+    transform: translateX(-4px);
+}
